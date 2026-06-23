@@ -2,51 +2,139 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>CapCheck HVAC</title>
+  <title>CapCheck HVAC | Capacitor Diagnostics for HVAC Pros</title>
+  <meta name="description" content="CapCheck HVAC helps trained HVAC/R technicians test single and dual run capacitors with fast field calculations, 50Hz/60Hz support, and adjustable tolerance settings.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="CapCheck HVAC">
+  <meta property="og:description" content="Accurate capacitor diagnostics for HVAC professionals.">
+  <meta property="og:image" content="https://cakemadeapps.com/assets/capcheck/feature.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/assets/capcheck/icon.png">
+  <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
+<body class="capcheck-page">
+  <header class="site-nav cap-nav">
+    <a class="brand-link" href="/">CakeMade Apps</a>
+    <nav aria-label="CapCheck navigation">
+      <a href="#features">Features</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="/capcheck-hvac/support.html">Support</a>
+      <a href="/capcheck-hvac/privacy.html">Privacy</a>
+    </nav>
+  </header>
 
-<h1>CapCheck HVAC</h1>
+  <main>
+    <section class="cap-hero">
+      <div class="cap-hero-copy">
+        <div class="product-kicker">
+          <img src="/assets/capcheck/icon.png" alt="CapCheck HVAC app icon">
+          <span>CapCheck HVAC</span>
+        </div>
+        <h1>Accurate capacitor diagnostics for HVAC professionals.</h1>
+        <p>
+          Test single and dual run capacitors in the field using live voltage and conductor amp readings.
+          Built for trained HVAC/R technicians who need quick, clear results.
+        </p>
+        <div class="hero-actions">
+          <a class="button cap-primary" href="https://play.google.com/store/apps/details?id=com.cakemade.capcheck" rel="noopener">Get it on Google Play</a>
+          <a class="button ghost" href="#screenshots">View Screenshots</a>
+        </div>
+        <div class="trust-strip" aria-label="CapCheck HVAC highlights">
+          <span>Single Run</span>
+          <span>Dual Run</span>
+          <span>50/60Hz</span>
+          <span>Adjustable Tolerance</span>
+        </div>
+      </div>
 
-<p>
-CapCheck HVAC is a capacitor diagnostic tool designed for HVAC technicians,
-electricians, and maintenance professionals.
-</p>
+      <div class="cap-hero-art" aria-label="CapCheck HVAC feature graphic">
+        <img src="/assets/capcheck/feature.png" alt="CapCheck HVAC feature graphic with capacitor and waveform">
+      </div>
+    </section>
 
-<h2>Features</h2>
+    <section id="features" class="cap-section">
+      <div class="section-heading">
+        <span class="badge">Field-ready calculations</span>
+        <h2>Built around the way technicians test capacitors.</h2>
+        <p>CapCheck keeps the workflow simple: enter the rated value, measured voltage, amps, and tolerance, then compare the result against an allowed range.</p>
+      </div>
 
-<ul>
-  <li>Single and dual capacitor evaluation</li>
-  <li>50 Hz and 60 Hz support</li>
-  <li>Field measurement calculations</li>
-  <li>Custom tolerance input</li>
-  <li>Ad-free upgrade option</li>
-</ul>
+      <div class="cap-feature-grid">
+        <article class="cap-feature-card">
+          <span class="feature-icon">~</span>
+          <h3>Single Run Evaluation</h3>
+          <p>Calculate single motor run capacitor values from P1 to P2 voltage and conductor amps.</p>
+        </article>
+        <article class="cap-feature-card">
+          <span class="feature-icon">⚡</span>
+          <h3>Dual Run Evaluation</h3>
+          <p>Check HERM and FAN sides separately for a clearer view of dual run capacitor health.</p>
+        </article>
+        <article class="cap-feature-card">
+          <span class="feature-icon">50</span>
+          <h3>50Hz &amp; 60Hz Support</h3>
+          <p>Switch line frequency in settings for work across different equipment and regions.</p>
+        </article>
+        <article class="cap-feature-card">
+          <span class="feature-icon">±</span>
+          <h3>Custom Tolerance</h3>
+          <p>Use the default 10% tolerance or enter manufacturer tolerance values when needed.</p>
+        </article>
+      </div>
+    </section>
 
-<h2>Availability</h2>
+    <section class="diagnostic-band">
+      <div>
+        <span class="badge">Fast. Accurate. Clear.</span>
+        <h2>Less guessing. More confidence.</h2>
+      </div>
+      <div class="diagnostic-stats">
+        <div><strong>GOOD</strong><span>Pass/fail clarity</span></div>
+        <div><strong>µF</strong><span>Calculated capacitance</span></div>
+        <div><strong>±%</strong><span>Allowed range</span></div>
+      </div>
+    </section>
 
-<p>
-Available on Google Play.
-</p>
+    <section id="screenshots" class="cap-section screenshots-section">
+      <div class="section-heading">
+        <span class="badge">App screenshots</span>
+        <h2>Clean inputs. Clear results.</h2>
+        <p>Designed for quick field use with large values, dark-mode visibility, and direct result cards.</p>
+      </div>
 
-<h2>Support</h2>
+      <div class="phone-row" aria-label="CapCheck HVAC app screenshots">
+        <figure class="phone-frame">
+          <img src="/assets/capcheck/screen-home.jpg" alt="CapCheck HVAC home screen">
+          <figcaption>Choose single or dual run testing.</figcaption>
+        </figure>
+        <figure class="phone-frame featured-phone">
+          <img src="/assets/capcheck/screen-single-results.jpg" alt="CapCheck HVAC single run result screen showing a good result">
+          <figcaption>Review calculated µF, deviation, and allowed range.</figcaption>
+        </figure>
+        <figure class="phone-frame">
+          <img src="/assets/capcheck/screen-dual-input.jpg" alt="CapCheck HVAC dual run input screen">
+          <figcaption>Enter HERM and FAN readings in one workflow.</figcaption>
+        </figure>
+        <figure class="phone-frame">
+          <img src="/assets/capcheck/screen-settings.jpg" alt="CapCheck HVAC settings screen">
+          <figcaption>Set frequency, theme, and privacy options.</figcaption>
+        </figure>
+      </div>
+    </section>
 
-<p>
-Email: capcheckhvac@gmail.com
-</p>
+    <section class="cap-cta">
+      <img src="/assets/capcheck/icon.png" alt="CapCheck HVAC icon">
+      <div>
+        <h2>Built for HVAC pros.</h2>
+        <p>Download CapCheck HVAC and test run capacitors with fast, field-ready calculations.</p>
+      </div>
+      <a class="button cap-primary" href="https://play.google.com/store/apps/details?id=com.cakemade.capcheck" rel="noopener">Get it on Google Play</a>
+    </section>
+  </main>
 
-<p>
-<a href="/capcheck-hvac/privacy.html">Privacy Policy</a>
-</p>
-
-<p>
-<a href="/capcheck-hvac/support.html">Support</a>
-</p>
-
-<p>
-<a href="/">Back to CakeMade Apps</a>
-</p>
-
+  <footer class="footer cap-footer">
+    <span>© 2026 CakeMade Apps</span>
+    <span><a href="/capcheck-hvac/privacy.html">Privacy Policy</a> · <a href="/capcheck-hvac/support.html">Support</a></span>
+  </footer>
 </body>
 </html>

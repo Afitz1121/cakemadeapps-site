@@ -138,3 +138,428 @@ p {
     font-size: 16px;
   }
 }
+
+/* CapCheck HVAC product pages */
+.site-nav {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.site-nav nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.site-nav a:hover { color: var(--blue-2); }
+
+.brand-link {
+  color: var(--text) !important;
+  letter-spacing: -0.02em;
+}
+
+.capcheck-page {
+  --cap-bg: #07111f;
+  --cap-bg-2: #0b1730;
+  --cap-panel: rgba(15, 27, 52, .82);
+  --cap-panel-2: rgba(8, 18, 35, .92);
+  --cap-line: rgba(61, 199, 255, .18);
+  background:
+    radial-gradient(circle at 82% 8%, rgba(30, 136, 255, .34), transparent 28%),
+    radial-gradient(circle at 14% 28%, rgba(61, 199, 255, .12), transparent 28%),
+    linear-gradient(180deg, #030711 0%, var(--cap-bg) 48%, #040812 100%);
+  overflow-x: hidden;
+}
+
+.capcheck-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: .24;
+  background-image:
+    linear-gradient(var(--cap-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--cap-line) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: radial-gradient(circle at 70% 10%, black, transparent 58%);
+}
+
+.cap-nav {
+  position: relative;
+  z-index: 5;
+}
+
+.cap-hero,
+.cap-section,
+.diagnostic-band,
+.cap-cta,
+.cap-footer,
+.legal-shell {
+  width: min(1180px, 92%);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.cap-hero {
+  min-height: calc(100vh - 92px);
+  display: grid;
+  grid-template-columns: minmax(0, .92fr) minmax(440px, 1.08fr);
+  gap: 44px;
+  align-items: center;
+  padding: 48px 0 80px;
+}
+
+.product-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 14px 8px 8px;
+  border: 1px solid rgba(118, 228, 255, .22);
+  border-radius: 999px;
+  background: rgba(30, 136, 255, .09);
+  color: #76e4ff;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: 13px;
+}
+
+.product-kicker img {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+}
+
+.cap-hero h1,
+.legal-hero h1 {
+  max-width: 780px;
+  font-size: clamp(44px, 7vw, 88px);
+  line-height: .94;
+  margin: 22px 0;
+  letter-spacing: -0.07em;
+}
+
+.cap-hero p {
+  max-width: 680px;
+  font-size: clamp(18px, 2vw, 23px);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.cap-primary {
+  box-shadow: 0 0 34px rgba(30, 136, 255, .38);
+}
+
+.button.ghost {
+  background: rgba(255, 255, 255, .045);
+  border: 1px solid rgba(255, 255, 255, .14);
+  color: var(--text);
+}
+
+.trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.trust-strip span {
+  padding: 9px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(118, 228, 255, .18);
+  background: rgba(255, 255, 255, .04);
+  color: #cfe9ff;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.cap-hero-art {
+  position: relative;
+  border-radius: 34px;
+  padding: 10px;
+  background: linear-gradient(135deg, rgba(30, 136, 255, .5), rgba(118, 228, 255, .06));
+  box-shadow: 0 24px 90px rgba(0, 0, 0, .55), 0 0 70px rgba(30, 136, 255, .28);
+}
+
+.cap-hero-art img {
+  display: block;
+  width: 100%;
+  border-radius: 26px;
+}
+
+.cap-section {
+  padding: 64px 0;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+
+.section-heading h2,
+.diagnostic-band h2,
+.cap-cta h2 {
+  margin: 16px 0 10px;
+  letter-spacing: -0.045em;
+}
+
+.cap-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.cap-feature-card,
+.legal-card {
+  border: 1px solid rgba(118, 228, 255, .14);
+  background:
+    linear-gradient(180deg, rgba(20, 35, 66, .88), rgba(8, 17, 34, .9));
+  border-radius: 26px;
+  padding: 26px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.32);
+}
+
+.cap-feature-card h3 {
+  margin: 18px 0 8px;
+  font-size: 22px;
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: rgba(30, 136, 255, .14);
+  border: 1px solid rgba(61, 199, 255, .28);
+  color: #76e4ff;
+  font-weight: 1000;
+  font-size: 24px;
+  box-shadow: inset 0 0 28px rgba(30, 136, 255, .16);
+}
+
+.diagnostic-band {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 34px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 24px;
+  align-items: center;
+  border-radius: 32px;
+  border: 1px solid rgba(118, 228, 255, .18);
+  background:
+    radial-gradient(circle at 10% 50%, rgba(30, 136, 255, .2), transparent 36%),
+    linear-gradient(135deg, rgba(11, 23, 48, .92), rgba(3, 7, 17, .92));
+}
+
+.diagnostic-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.diagnostic-stats div {
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(255,255,255,.045);
+  border: 1px solid rgba(255,255,255,.1);
+}
+
+.diagnostic-stats strong {
+  display: block;
+  color: #76e4ff;
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.diagnostic-stats span {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.phone-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.phone-frame {
+  margin: 0;
+  padding: 10px;
+  border-radius: 34px;
+  background: linear-gradient(180deg, rgba(118, 228, 255, .18), rgba(255, 255, 255, .05));
+  border: 1px solid rgba(118, 228, 255, .16);
+  box-shadow: 0 20px 60px rgba(0,0,0,.4);
+}
+
+.phone-frame img {
+  width: 100%;
+  display: block;
+  border-radius: 25px;
+  aspect-ratio: 9 / 19.5;
+  object-fit: cover;
+}
+
+.featured-phone {
+  transform: translateY(-18px);
+  box-shadow: 0 24px 80px rgba(30, 136, 255, .22);
+}
+
+.phone-frame figcaption {
+  padding: 14px 8px 6px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.cap-cta {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 22px;
+  align-items: center;
+  border-radius: 32px;
+  border: 1px solid rgba(118, 228, 255, .18);
+  background:
+    radial-gradient(circle at 0 50%, rgba(30, 136, 255, .26), transparent 30%),
+    linear-gradient(135deg, rgba(20, 35, 66, .94), rgba(6, 12, 25, .96));
+}
+
+.cap-cta img {
+  width: 90px;
+  border-radius: 24px;
+}
+
+.cap-cta h2,
+.cap-cta p { margin: 0; }
+
+.cap-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.legal-shell {
+  padding: 46px 0 40px;
+}
+
+.legal-hero {
+  max-width: 860px;
+}
+
+.legal-card {
+  max-width: 900px;
+  margin-top: 28px;
+}
+
+.legal-card h2 {
+  font-size: 28px;
+  margin-top: 34px;
+}
+
+.big-link {
+  font-size: clamp(22px, 4vw, 36px);
+  font-weight: 900;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.support-card { margin-top: 0; }
+
+@media (max-width: 980px) {
+  .cap-hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    padding-top: 26px;
+  }
+
+  .cap-hero-art { max-width: 760px; }
+  .cap-feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .diagnostic-band { grid-template-columns: 1fr; }
+  .phone-row {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 12px;
+  }
+  .phone-frame {
+    min-width: 260px;
+    scroll-snap-align: start;
+  }
+  .featured-phone { transform: none; }
+  .cap-cta { grid-template-columns: 1fr; }
+  .support-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .site-nav {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 18px;
+  }
+
+  .site-nav nav {
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .cap-hero,
+  .cap-section,
+  .diagnostic-band,
+  .cap-cta,
+  .cap-footer,
+  .legal-shell {
+    width: 90%;
+  }
+
+  .cap-hero h1,
+  .legal-hero h1 {
+    letter-spacing: -0.055em;
+  }
+
+  .cap-hero-art {
+    border-radius: 22px;
+    padding: 6px;
+  }
+
+  .cap-hero-art img { border-radius: 17px; }
+  .cap-feature-grid { grid-template-columns: 1fr; }
+  .diagnostic-stats { grid-template-columns: 1fr; }
+  .diagnostic-band,
+  .cap-cta,
+  .cap-feature-card,
+  .legal-card { border-radius: 22px; }
+  .phone-frame { min-width: 230px; }
+  .cap-footer { flex-direction: column; }
+}
