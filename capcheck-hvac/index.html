@@ -10,6 +10,7 @@
   <meta property="og:image" content="https://cakemadeapps.com/assets/capcheck/feature.png">
   <meta property="og:type" content="website">
   <link rel="icon" href="/assets/capcheck/icon.png">
+  <link rel="preload" as="image" href="/assets/capcheck/feature.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body class="capcheck-page">
@@ -49,7 +50,10 @@
       </div>
 
       <div class="cap-hero-art" aria-label="CapCheck HVAC feature graphic">
-        <img src="/assets/capcheck/feature.png" alt="CapCheck HVAC feature graphic with capacitor and waveform">
+        <picture>
+          <source srcset="/assets/capcheck/feature.webp" type="image/webp">
+          <img src="/assets/capcheck/feature.png" width="1672" height="941" alt="CapCheck HVAC feature graphic with capacitor and waveform" loading="eager" decoding="async" fetchpriority="high">
+        </picture>
       </div>
     </section>
 
@@ -168,7 +172,7 @@
 
   <footer class="footer cap-footer">
     <span>© 2026 CakeMade Apps</span>
-    <span><a href="/capcheck-hvac/privacy.html">Privacy Policy</a> · <a href="/capcheck-hvac/support.html">Support</a></span>
+    <span><a href="/">CakeMade Apps</a> · <a href="/fieldbuilt/">FieldBuilt</a> · <a href="/capcheck-hvac/privacy.html">Privacy Policy</a> · <a href="/capcheck-hvac/support.html">Support</a></span>
   </footer>
 </body>
 </html>
